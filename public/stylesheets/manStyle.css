@@ -1,0 +1,11 @@
+body {
+    color: white;
+    background-color: rgb(39, 39, 39);
+    font: 14px "Consolas", Helvetica, Arial, sans-serif;
+}
+  
+table {
+    border: 1px solid rgb(224, 218, 218);
+    width: 50%;
+}
+  

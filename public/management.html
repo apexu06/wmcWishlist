@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Management</title>
+
+        <script>
+            var exports = { __esModule: true };
+        </script>
+        <link rel="stylesheet" href="stylesheets/indexStyle.css" />
+
+        <script defer src="javascripts/manager.js"></script>
+    </head>
+    <body>
+        <div class="pageContainer">
+            <div class="childrenManageContainer">
+                <h1>Manage Children</h1>
+                <div class="childForm">
+                    <label for="name">Name:</label><br />
+                    <input id="name" type="text" /><br />
+
+                    <label for="age">Age:</label><br />
+                    <input id="age" type="number" /><br />
+
+                    <button onclick="addChild()" class="submitButton">
+                        Add new Child
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <style>
+        .submitButton {
+            margin-top: 8px;
+            width: 20%;
+            height: 48px;
+            background-color: rgb(64, 64, 255);
+            color: white;
+            border-radius: 8px;
+            border: none;
+            transition: 200ms;
+        }
+
+        .submitButton:hover {
+            background-color: white;
+            color: black;
+            transition: 200ms;
+        }
+    </style>
+</html>
