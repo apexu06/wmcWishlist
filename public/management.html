@@ -15,6 +15,7 @@
     </head>
     <body>
         <div class="pageContainer">
+            <a href="index.html">Back to Start Page</a>
             <div class="childrenManageContainer">
                 <h1>Manage Children</h1>
                 <div class="childForm">
@@ -25,8 +26,34 @@
                     <input id="age" type="number" /><br />
 
                     <button onclick="addChild()" class="submitButton">
-                        Add new Child
-                    </button>
+                        Add new Child</button
+                    ><br />
+
+                    <span class="childStatus"></span>
+                </div>
+            </div>
+
+            <div class="presentManageContainer">
+                <h1>Manage Present</h1>
+                <div class="wishForm">
+                    <label for="name">Select Child:</label><br />
+                    <select name="name" id="childSelect"></select
+                    ><br />
+
+                    <label for="wishName">Name:</label><br />
+                    <input id="wishName" type="text" /><br />
+
+                    <label for="wishURL">URL:</label><br />
+                    <input id="wishURL" type="text" /><br />
+
+                    <label for="wishImgURL">Image URL:</label><br />
+                    <input id="wishImgURL" type="text" /><br />
+
+                    <button onclick="addWish()" class="submitButton">
+                        Add new Wish</button
+                    ><br />
+
+                    <span class="wishStatus"></span>
                 </div>
             </div>
         </div>
@@ -42,6 +69,7 @@
             border-radius: 8px;
             border: none;
             transition: 200ms;
+            margin-bottom: 10px;
         }
 
         .submitButton:hover {
