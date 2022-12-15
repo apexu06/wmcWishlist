@@ -10,4 +10,4 @@ Create a folder where you will clone the repository into. Then:
 - `npm run start`
 
 
-Then go to localhost:3000
+Then go to (localhost)[http://localhost:3000/]
