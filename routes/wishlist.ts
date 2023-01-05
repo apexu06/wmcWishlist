@@ -85,7 +85,7 @@ router.post("/children/:id/wishes", (req: any, res: any) => {
         res.status(201).send(JSON.stringify(newWish));
     } else {
         res.status(404).send("Child not found!");
-        latestChildID--;
+        latestWishID--;
     }
 });
 
